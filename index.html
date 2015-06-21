@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/flat-ui.min.css">
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+<style>
+    #messages {
+        border: 1px solid black;
+        min-height: 20px;
+    }
+    body{
+    	background-color: #2ECC71;
+    }
+
+    .navbar-inverse{
+    	background-color: #27AE60 !important;
+    }
+</style>
+<script src="js/rtc.min.js"></script>
+<script>
+
+	$( document ).ready(function() {
+			console.log( "ready!" );
+			$('#greetings').fadeIn(4000,function(){this.remove();});
+			
+	});
+</script>
+<body>
+	<nav class="navbar navbar-inverse navbar-embossed" role="navigation">
+            <div class="navbar-header">
+            	<img src ="logo.png" width="72px" height = "90px" align='left' style ="padding: 10px"></img>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+                <span class="sr-only">Toggle navigation</span>
+              </button>
+              <a class="navbar-brand" href="#" style="padding:20px;">FacePalm</a>
+            </div>          
+          </nav>
+		<div class="container-fluid">
+		<div id = "greetings" style = "display:none;">
+			<img src ="logo.png" width ="315x" height ="400px" style ="position: relative; left: 40%"></img>
+		</div>
+    	<div id="l-video" class="col-md-6"></div>
+    	<div id="r-video" class="col-md-6"></div>
+    	<div class = "col-md-12">
+
+    	</div>
+   </div> 
+
+     <nav class="navbar navbar-inverse navbar-embossed navbar-fixed-bottom" >
+          <p align='center' style ="color:white;" style="padding:10px;">Developed by Abhilash & Pulkit </p>
+      </nav>
+    <script src="js/rtc-video-chat.js"></script>
+</body>
